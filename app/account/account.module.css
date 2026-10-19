@@ -1,0 +1,724 @@
+.page {
+  min-height: 100vh;
+  background: #f5f4ee;
+  color: #222127;
+  font-family: "DM Sans", Arial, sans-serif;
+}
+.header {
+  max-width: 1480px;
+  min-height: 100px;
+  padding: 24px 56px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+.brand {
+  color: #222127;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font:
+    800 31px "Manrope",
+    Arial,
+    sans-serif;
+  letter-spacing: -0.075em;
+  text-decoration: none;
+}
+.brandMark {
+  width: 35px;
+  height: 38px;
+  display: inline-grid;
+  place-items: center;
+  background: #6236ef;
+  color: #d3f36a;
+  font:
+    800 34px/0.9 "Manrope",
+    Arial,
+    sans-serif;
+  border-radius: 9px 9px 17px 9px;
+  letter-spacing: -0.08em;
+  position: relative;
+  padding-bottom: 4px;
+  flex-shrink: 0;
+}
+.brandMark > span {
+  position: absolute;
+  right: 3px;
+  top: 2px;
+  font:
+    700 12px "Manrope",
+    Arial,
+    sans-serif;
+}
+.brandDot {
+  color: #6236ef;
+}
+.backLink {
+  display: inline-flex;
+  gap: 9px;
+  align-items: center;
+  text-decoration: none;
+  color: #55525d;
+  font-size: 12px;
+  font-weight: 600;
+}
+.backLink:hover {
+  color: #6236ef;
+}
+.grid {
+  max-width: 1368px;
+  display: grid;
+  grid-template-columns: 1.04fr 1fr;
+  margin: 0 auto;
+  min-height: 760px;
+  border: 1px solid #deddd5;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.story {
+  padding: 48px 48px 24px;
+  background: #6236ef;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.45px;
+}
+.eyebrow > span {
+  width: 7px;
+  height: 7px;
+  display: block;
+  background: #d3f36a;
+  border-radius: 50%;
+}
+.story h1 {
+  font-family: "Manrope", Arial, sans-serif;
+  font-size: clamp(49px, 5.1vw, 71px);
+  font-weight: 800;
+  line-height: 1.03;
+  letter-spacing: -4.4px;
+  margin: 37px 0 25px;
+}
+.story h1 > span {
+  color: #d3f36a;
+}
+.story > p {
+  color: #e6defd;
+  font-size: 14px;
+  line-height: 1.8;
+  max-width: 350px;
+  margin: 0;
+}
+.sectors {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  margin: 24px 0 0;
+}
+.sectors > span {
+  border: 1px solid #ffffff50;
+  border-radius: 30px;
+  padding: 7px 12px;
+  color: #f2edff;
+  font-size: 10px;
+}
+.illustration {
+  height: 260px;
+  position: relative;
+  isolation: isolate;
+  margin-top: 20px;
+}
+.orbit {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 105px;
+  top: 40px;
+  border: 1px solid #ffffff26;
+  border-radius: 50%;
+  transform: rotate(-25deg);
+}
+.orbit:before,
+.orbit:after {
+  content: "";
+  position: absolute;
+  inset: 22px;
+  border: 1px solid #ffffff20;
+  border-radius: 50%;
+}
+.orbit:after {
+  inset: 44px;
+}
+.connectionCard {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  right: 40px;
+  padding: 18px 17px;
+  background: #fff;
+  color: #222127;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 12px 30px #2c156f25;
+  transform: rotate(-5deg);
+  z-index: 1;
+}
+.cardIcon {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  color: #6236ef;
+  border-radius: 50%;
+  background: #f0eafe;
+  flex-shrink: 0;
+}
+.connectionCard > span {
+  flex: 1;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #77737d;
+}
+.connectionCard strong {
+  font-size: 12px;
+  color: #222127;
+  font-weight: 700;
+}
+.connectionCard > svg {
+  color: #6236ef;
+  flex-shrink: 0;
+}
+.opportunityCard {
+  position: absolute;
+  top: 112px;
+  right: 7px;
+  min-width: 285px;
+  padding: 19px 22px;
+  background: #d3f36a;
+  border: 1px solid #c7e765;
+  color: #222127;
+  border-radius: 15px;
+  transform: rotate(6deg);
+  box-shadow: 0 12px 35px #2c156f20;
+}
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.opportunityCard > strong {
+  display: block;
+  font-family: "Manrope", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 1.05;
+  letter-spacing: -1.4px;
+  margin: 18px 0;
+}
+.cardFooter {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  font-size: 8px;
+  font-weight: 600;
+}
+.avatar {
+  height: 23px;
+  width: 23px;
+  background: #222127;
+  color: #d3f36a;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  font-weight: 800;
+}
+.spark {
+  position: absolute;
+  left: 30px;
+  top: 145px;
+  color: #d3f36a;
+  font-size: 77px;
+  line-height: 1;
+  transform: rotate(-10deg);
+}
+.storyFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 48px;
+  color: #e2d8ff;
+  font-size: 10px;
+  border-bottom: 0;
+}
+.storyFooter > span:last-child {
+  font-size: 23px;
+  color: #d3f36a;
+}
+.formPanel {
+  background: #fffefa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 62px 52px;
+}
+.formContent {
+  width: 100%;
+  max-width: 365px;
+}
+.formEyebrow {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  color: #6236ef;
+}
+.formContent h2 {
+  font-family: "Manrope", Arial, sans-serif;
+  font-size: 40px;
+  letter-spacing: -1.7px;
+  line-height: 1.16;
+  font-weight: 800;
+  margin: 17px 0 13px;
+}
+.formIntro {
+  color: #77737d;
+  font-size: 13px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+.notice {
+  display: flex;
+  gap: 11px;
+  align-items: flex-start;
+  background: #f0eafe;
+  border: 1px solid #e4d8ff;
+  border-radius: 10px;
+  padding: 15px;
+  color: #4d3199;
+  margin-bottom: 27px;
+}
+.notice > svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.notice strong {
+  font-size: 11px;
+  font-weight: 800;
+}
+.notice p {
+  font-size: 11px;
+  line-height: 1.7;
+  margin: 4px 0 0;
+  color: #67548d;
+}
+.form fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 19px;
+  min-width: 0;
+}
+.form label {
+  display: grid;
+  gap: 9px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #3b3843;
+}
+.form input {
+  border: 1px solid #dcd9e1;
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px 14px;
+  font-size: 12px;
+  color: #222127;
+  width: 100%;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+.form input::placeholder {
+  color: #9a96a1;
+}
+.form input:hover:not(:disabled) {
+  border-color: #ad96fa;
+}
+.form input:focus-visible {
+  outline: 2px solid #6236ef;
+  outline-offset: 3px;
+}
+.form input:disabled {
+  background: #f5f4f1;
+  color: #aaa5af;
+  cursor: not-allowed;
+}
+.primaryButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #6236ef;
+  border-radius: 8px;
+  background: #6236ef;
+  color: #fff;
+  text-decoration: none;
+  padding: 16px 18px;
+  font-size: 12px;
+  font-weight: 700;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+.form .primaryButton {
+  margin-top: 7px;
+}
+.primaryButton:hover:not(:disabled) {
+  background: #4d24d6;
+  transform: translateY(-1px);
+}
+.primaryButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.switchRow {
+  margin-top: 26px;
+  padding-top: 24px;
+  border-top: 1px solid #e9e6ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  color: #837e8b;
+  font-size: 11px;
+}
+.switch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  color: #6236ef;
+  background: transparent;
+  border: 0;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 0;
+}
+.switch:hover {
+  color: #4220b0;
+  text-decoration: underline;
+}
+.switch:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+.formNote {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  color: #96909f;
+  margin-top: 31px;
+}
+.signedIn {
+  padding-top: 6px;
+}
+.signedInIcon {
+  display: grid;
+  place-items: center;
+  background: #e8f5c6;
+  border-radius: 50%;
+  width: 47px;
+  height: 47px;
+  color: #405514;
+  margin-bottom: 18px;
+}
+.signedIn > p {
+  color: #77737d;
+  font-size: 12px;
+  line-height: 1.8;
+  margin-bottom: 26px;
+  overflow-wrap: anywhere;
+}
+.signedIn strong {
+  display: block;
+  color: #222127;
+}
+.signedIn > .switch {
+  width: 100%;
+  margin-top: 19px;
+}
+.message {
+  font-size: 12px;
+  line-height: 1.7;
+  padding: 13px 15px;
+  background: #f0eafe;
+  color: #4d3199;
+  border-radius: 8px;
+  margin-top: 22px;
+}
+.footer {
+  max-width: 1368px;
+  margin: auto;
+  padding: 26px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-size: 10px;
+  color: #8a8590;
+}
+.page a:focus-visible,
+.page button:focus-visible {
+  outline: 2px solid #6236ef;
+  outline-offset: 5px;
+}
+@media (min-width: 1450px) {
+  .grid {
+    min-height: 810px;
+  }
+  .story h1 {
+    font-size: 76px;
+  }
+  .illustration {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 1450px) {
+  .grid {
+    margin: 0 40px;
+  }
+  .footer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (max-width: 1050px) {
+  .header {
+    padding: 25px 32px;
+  }
+  .grid {
+    margin: 0 25px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .story {
+    padding: 38px 29px 23px;
+  }
+  .story h1 {
+    font-size: 55px;
+    letter-spacing: -3.3px;
+  }
+  .formPanel {
+    padding: 50px 31px;
+  }
+  .formContent h2 {
+    font-size: 34px;
+  }
+  .connectionCard {
+    right: 0;
+    padding: 14px;
+  }
+  .connectionCard > svg {
+    display: none;
+  }
+  .connectionCard > span {
+    font-size: 10px;
+  }
+  .connectionCard strong {
+    font-size: 11px;
+  }
+  .opportunityCard {
+    min-width: 240px;
+    right: 0;
+    top: 116px;
+  }
+  .opportunityCard > strong {
+    font-size: 27px;
+  }
+  .spark {
+    left: 0;
+    top: 155px;
+    font-size: 58px;
+  }
+  .footer {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+@media (max-width: 740px) {
+  .header {
+    min-height: 86px;
+    padding: 20px 24px;
+    gap: 15px;
+  }
+  .brand {
+    font-size: 20px;
+    gap: 8px;
+  }
+  .brandMark {
+    width: 28px;
+    height: 28px;
+  }
+  .backLink {
+    font-size: 0;
+    gap: 0;
+  }
+  .backLink svg {
+    width: 21px;
+    height: 21px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    margin: 0 16px;
+    border-radius: 18px;
+    min-height: 0;
+  }
+  .story {
+    padding: 30px 28px;
+  }
+  .story h1 {
+    font-size: 55px;
+    line-height: 1.05;
+    margin: 25px 0 18px;
+    letter-spacing: -3.5px;
+  }
+  .story > p {
+    font-size: 12px;
+    max-width: 320px;
+  }
+  .eyebrow {
+    font-size: 8px;
+    letter-spacing: 1.15px;
+  }
+  .sectors {
+    margin-top: 19px;
+  }
+  .sectors > span {
+    font-size: 9px;
+    padding: 6px 11px;
+  }
+  .illustration {
+    height: 227px;
+    margin: 16px 0 0;
+    max-width: 430px;
+    width: 100%;
+    align-self: center;
+  }
+  .connectionCard {
+    right: 45px;
+    top: 14px;
+  }
+  .connectionCard > svg {
+    display: block;
+  }
+  .opportunityCard {
+    right: 10px;
+    top: 101px;
+    min-width: 250px;
+    padding: 16px 19px;
+  }
+  .opportunityCard > strong {
+    font-size: 27px;
+    margin: 13px 0;
+  }
+  .spark {
+    left: 20px;
+    top: 136px;
+    font-size: 65px;
+  }
+  .storyFooter {
+    padding-top: 21px;
+    font-size: 9px;
+  }
+  .formPanel {
+    padding: 44px 27px 42px;
+  }
+  .formContent {
+    max-width: 440px;
+  }
+  .formContent h2 {
+    font-size: 35px;
+    margin-top: 14px;
+  }
+  .formIntro {
+    font-size: 12px;
+  }
+  .notice {
+    margin-bottom: 24px;
+  }
+  .footer {
+    padding: 23px 23px 30px;
+    font-size: 9px;
+    align-items: flex-start;
+  }
+  .footer > span:last-child {
+    text-align: right;
+    max-width: 130px;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 1100px) {
+  .brand {
+    font-size: 28px;
+  }
+}
+@media (max-width: 740px) {
+  .brand {
+    font-size: 27px;
+    gap: 10px;
+  }
+  .brandMark {
+    height: 34px;
+    width: 32px;
+    font-size: 30px;
+  }
+}
+@media (max-width: 380px) {
+  .story h1 {
+    font-size: 44px;
+    letter-spacing: -2.6px;
+  }
+  .connectionCard {
+    right: 0;
+  }
+  .connectionCard > svg {
+    display: none;
+  }
+  .opportunityCard {
+    min-width: 215px;
+    right: 0;
+  }
+  .spark {
+    left: -5px;
+    font-size: 48px;
+  }
+  .formPanel {
+    padding: 38px 23px;
+  }
+  .formContent h2 {
+    font-size: 31px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page * {
+    transition: none !important;
+  }
+}
