@@ -2387,3 +2387,10 @@ button {
   line-height: 1.7;
   margin: 18px 0 0;
 }
+
+.audit-entry { display:flex; align-items:center; justify-content:space-between; gap:25px; background:var(--lilac); }
+.audit-entry h3 { font-size:27px; letter-spacing:-.04em; margin:15px 0 10px; }
+.audit-entry p { font-size:13px; line-height:1.8; max-width:600px; margin:0; color:var(--muted); }
+.audit-entry a { text-decoration:none; flex-shrink:0; }
+@media (max-width:850px) { .header-actions .outline-button { display:none; } }
+@media (max-width:650px) { .audit-entry { flex-direction:column; align-items:flex-start; } }

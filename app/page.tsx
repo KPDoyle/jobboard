@@ -164,7 +164,7 @@ type Application = {
   email: string;
   created: string;
 };
-const navigation = ["Discover", "Rewards", "Referrals", "Employer"];
+const navigation = ["Discover", "Rewards", "Referrals", "Employer", "People audit"];
 const storageValidators = {
   jobs: (value: unknown): value is Job[] =>
     Array.isArray(value) &&
@@ -343,6 +343,7 @@ export default function Page() {
     toastTimer.current = setTimeout(() => setToast(""), 5000);
   };
   const nav = (next: string) => {
+    if (next === "People audit") { window.location.assign("/people-audit"); return; }
     setTab(next);
     setMobile(false);
     window.scrollTo({ top: 0, behavior: scrollBehavior() });
@@ -1131,6 +1132,10 @@ export default function Page() {
                 >
                   <Plus size={17} /> Post an opportunity
                 </button>
+              </div>
+              <div className="panel audit-entry">
+                <div><div className="eyebrow dark">VANTAGE PEOPLE AUDIT</div><h3>Look beyond the profile.</h3><p>Check candidate claims and supplied links. See the evidence, record human reviews, and keep unresolved claims visible.</p></div>
+                <Link href="/people-audit" className="primary-button">Audit a candidate <ArrowUpRight size={18} /></Link>
               </div>
               <div className="metric-grid">
                 <div>

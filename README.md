@@ -2,7 +2,7 @@
 
 A contemporary talent marketplace for ambitious professionals in legal, technology & AI, and finance. VANTAGE brings career opportunities, trusted introductions and professional-development rewards into one clear, energetic experience.
 
-Built with Next.js and deployed to the connected Vercel project `jobboard` from `KPDoyle/jobboard`.
+Built with Next.js. The repository is `KPDoyle/vantage`; the connected Vercel project is `vantage` (historically named `jobboard`).
 
 ## Current functionality
 
@@ -10,6 +10,10 @@ Built with Next.js and deployed to the connected Vercel project `jobboard` from 
 - Employer job administration, candidate applications, referral tracker and token catalogue currently operate in **browser-only demo mode** (localStorage).
 - Member login/register page at `/account`, which activates when a dedicated Supabase database and environment variables are configured.
 - `database/schema.sql`: production-oriented starter schema with ownership RLS, protected reward ledger and vacancy publishing restrictions. It is **not automatically applied**.
+
+## People audit
+
+Open `/people-audit` from the main navigation or employer dashboard. The working demo checks all links in a supplied profile copy, flags claim dates for review, records human evidence assessments, and exports a session report. LinkedIn is not scraped and source reachability never verifies a claim. See [PEOPLE_AUDIT.md](PEOPLE_AUDIT.md) for scope, data flow, tests and the production integration requirements.
 
 ## Provision backend
 

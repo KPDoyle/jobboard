@@ -25,3 +25,6 @@ coverage/
 .DS_Store
 .eslintcache
 *.pem
+
+.test-build/
+*.tsbuildinfo
